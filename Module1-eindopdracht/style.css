@@ -1,0 +1,273 @@
+html, body {
+
+    background-color: snow;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-size: 100%;
+    font-family: 'Comfortaa', cursive;
+  }
+  .wrapper {
+      width: 100%;
+      height: 100%;
+  }
+  h2 {
+      text-align: center;
+      font-size: 170%;
+      color: #4d4d4d;
+  }
+  h3 {
+      text-align: center;
+      font-size: 190%;
+      color: #4d4d4d;
+  }
+  p {
+      font-size: 1.2em;
+  }
+/*====== plak =======*/
+.ikPlakAanJou {
+	position: fixed;
+	top: 90%;
+	right: 0;
+	width: 8%;
+	height: 5%;
+	background-color: rgb(67, 64, 224);
+	opacity: 0.5;
+}
+.fa-arrow-up {
+    color: white;
+    font-size: 2em;
+}
+/*====== end plak =======*/
+ /*========================= container ==================*/
+.container {
+    width: 100%;
+    display: grid;
+    grid-gap: 0.5%;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 100vh auto 80px;
+    grid-template-areas: 
+        "h h h h h h h h h h h h"
+        "m m m m m m m m m m m m"
+        "f f f f f f f f f f f f";
+}
+ /*========================= end container ==================*/
+
+
+/* === Header ===*/
+header {
+    grid-area: h;
+    
+    width: 100%;
+    background-image: url('https://images.unsplash.com/photo-1561037404-61cd46aa615b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80');
+	background-position: center;
+	background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    background-color: rgb(142, 182, 182);
+    background-blend-mode: multiply;
+
+    animation: slider 45s ease-in-out infinite;
+    animation-fill-mode: backwards;
+    animation-direction: reverse;
+}
+@keyframes slider {
+    0%{background-image: url('https://images.unsplash.com/photo-1517423440428-a5a00ad493e8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=387&q=80');}
+    35%{background-image: url('https://images.unsplash.com/photo-1535930891776-0c2dfb7fda1a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=667&q=80');}
+    75%{background-image: url('https://images.unsplash.com/photo-1514984879728-be0aff75a6e8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=676&q=80');}
+}
+header h1 { 
+    margin-top: 250px;
+    margin-bottom: 0;
+    font-size: 300%;
+    color: rgb(221, 220, 255);
+}
+header p { 
+    margin-top: 2px;
+    font-size: 2em;
+    color: rgb(221, 220, 255);
+}
+.buttonBox {
+    margin-top: 50px;
+    margin: 0 auto;
+    width: 80%;
+    height: 35%;
+
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+}
+.buttonBox a {
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 2em;
+    color: #ffeead;
+    border-radius: 30px 30px 30px 30px;
+}
+.buttonBox .home {
+    background-color: #9FDCF9;
+}
+.buttonBox .home:hover {
+    background-color: rgb(142, 182, 182);
+}
+.buttonBox .about {
+    border: 3px solid #9FDCF9;
+}
+.buttonBox .about:hover {
+    background-color: rgb(142, 182, 182);
+}
+.buttonBox .contact {
+    background-color: #9FDCF9;
+}
+.buttonBox .contact:hover {
+    background-color: rgb(142, 182, 182);
+}
+/* === End Header ===*/
+
+main {
+    grid-area: m;
+}
+/* === Section 1 blaffende honden bijten niet ===*/
+.section-1 {
+    width: 100%;
+}
+.section-1 h2 {
+    color: #404040;
+}
+.section-1 p {
+    text-align: justify;
+    line-height: 1.1em;
+    padding: 0 3% 0 3%;
+    color: #666666;
+}
+/*========== youtube video met tekst ======*/
+.aboutBox .movieBox {
+    width: 100%;
+    height: 290px;
+}
+.aboutBox .movieBox .video {
+    width: 100%;
+    height: 100%;
+}
+.aboutTextBox p {
+    padding: 0 3% 0 3%;
+    text-align: justify;
+    color: #666666;
+}
+/*========== End youtube video met tekst ======*/
+/* === End blaffende honden bijten niet===*/
+
+/*===== Leden redactie ======*/
+.container1 {
+    margin-left: 1%;
+    display: grid;
+    grid-template-rows: repeat(auto-fit, minmax(300px, 3fr));
+    grid-auto-rows: auto;
+    grid-gap: 25px;
+    margin-top: 25px;
+    text-align: center;
+}
+article {
+    width: 100%;
+    background-color: rgb(142, 182, 182);
+    border-radius: 20px;
+    height: auto;
+    cursor: pointer;
+    transition: ease-in 0.5s;
+}
+article:hover {
+    background-color: rgb(238, 170, 130);
+    border-radius: 20px;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    border: 1px solid black;
+    height: auto;
+}
+article figure img {
+    margin-top: 2px;
+    width: 200px; 
+    height: 200px;
+    border-radius: 100%;
+    border: 5px solid aliceblue;;
+    margin-bottom: 25px;
+}
+article figure img p {
+    text-align: justify;
+    padding: 0 0% 0 0%;
+}
+/*===== End Leden van rde edactie ======*/
+
+footer {
+    grid-area: f;
+
+    margin-top: 10px;
+    background-color: rgb(142, 182, 182);
+    text-align: center;
+}
+
+
+
+
+
+ /*========================= @media Desktop ==================*/
+
+ @media (min-width: 1024px) {
+    .container {
+        grid-gap: 3px;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: 50% auto 80px;
+        grid-template-areas: 
+            "h h h h h h h h h h h h"
+            "m m m m m m m m m m m m"
+            "f f f f f f f f f f f f";
+    }
+    /*====== plak =======*/
+.ikPlakAanJou {
+	width: 5%;
+}
+
+/*====== end plak =======*/
+    header h1 {
+        font-size: 450%;
+    }
+    header p { 
+        margin-bottom: 5px;
+        font-size: 2em;
+    }
+    header .buttonBox {
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
+        margin-top: 200px;
+        width: 70%;
+        height: 50px;
+    }
+    header .buttonBox a {
+        width: 200px;
+        padding: 6px 18px 0 18px;
+        transition: ease-in 0.5s;
+    }
+    .aboutBox {
+        display: grid;
+        grid-template-columns: 60% 40%;
+    }
+    .aboutBox .movieBox {
+        width: 90%;
+    }
+    .container1 {
+        width: 98%;
+        margin-left: 1%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 3fr));
+        grid-auto-rows: auto;
+        grid-gap: 25px;
+        margin-top: 25px;
+        text-align: center;
+    }
+    article {
+        background-color: rgb(142, 182, 182);
+    }
+}
+
+  /*========================= end @media Desktop ==================*/

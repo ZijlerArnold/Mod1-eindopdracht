@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+        <a class="homeBtn1" href="index.html">
+            <div class="homeBtn">Home</div>
+        </a>
+
+        <form name="contact" method="POST" data-netlify="true">
+            <label class="label">Naam: </label><br>
+            <input class="input" type="text" name="name" value="" /><br>
+
+            <label class="emailLabel">Email: </label><br>
+            <input class="emailInput" type="email" name="email" value="" /><br>
+
+            <label class="label">Telefoonnummer (tel): </label><br>
+            <input class="input" type="tel" name="" value="" /><br>
+
+            <label class="label">Leeftijd: </label><br>
+            <input class="input" type="number" name="" value="" /><br>
+
+            <label class="label">Geboortedatum: </label><br>
+            <input class="input" type="date" name="" value="" /><br>
+
+            <label class="genderLabel">Gender: </label><br>
+            <div class="genderBox">
+                <input class="radio-gender" type="radio" name="" value="" /><label>Man</label>
+                <input class="radio-gender" type="radio" name="" value="" /><label>Vrouw</label>
+            </div>
+
+            <label class="label">favoriete Dier: </label><br>
+            <div class="flexContainerKeuzeDier">
+                <input class="dier" type="checkbox" name="" value="" /><br><label>Kanarie</label><br>
+                <input class="dier" type="checkbox" name="" value="" /><br><label>Vogelspin</label><br>
+                <input class="dier" type="checkbox" name="" value="" /><br><label>Slang</label><br>
+                <input class="dier" type="checkbox" name="" value="" /><br><label>Kikker</label><br>
+            </div>
+
+            <label>Message: </label><br>
+            <textarea name="message"></textarea><br>
+            <div class="buttonsBox">
+                <input class="button reset" type="reset" name="" value="Reset" /><br>
+                <input class="button submit" type="submit" name="" value="Submit" /><br>
+            </div>
+        </form>
+    </div>
+    <!--End Wrapper-->
+</body>
+
+</html>

@@ -1,0 +1,99 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    background-color: honeydew;
+}
+.homeBtn {
+    margin-top: 15px;
+    margin: 0 auto;
+    width: 50%;
+    height: 40px;
+    text-align: center;
+    font-size: 1.5em;
+    color: ghostwhite;
+    background-color: indigo; 
+}
+form {
+    margin-top: 10px;
+    margin: 0 auto;
+    width: 100%;
+    background-color: turquoise;
+}
+.label {
+    margin-top: 20px;
+    padding: 30px 0 15px 20px;
+    font-size: 1.5em;
+}
+.emailLabel {
+    padding: 30px 0 15px 20px;
+    font-size: 1.5em;
+}
+.emailInput {
+    margin-left: 20px;
+    width: 90%;
+    height: 28px;
+    font-size: 1.5em;   
+}
+.input {
+    margin-left: 20px;
+    width: 90%;
+    height: 28px;
+    font-size: 1.5em;
+}
+.genderBox {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.genderBox .genderLabel {
+    padding: 0 20px 0 0;
+    font-size: 1.5em;
+
+}
+.flexContainerKeuzeDier {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+textarea {
+    width: 95%;
+    height: 80px;
+}
+.buttonsBox {
+    width: 95%;
+    display: flex;
+    justify-content: flex-end; 
+}
+button {
+    width: 40px;
+    height: 60px;
+}
+footer {
+    width: 100%;
+    height: 80px;
+    text-align: center;
+    background-color: blue;
+    font-size: 1.3em;
+    color: whitesmoke;
+}
+
+ /*========================= @media Desktop ==================*/
+
+ @media (min-width: 1024px) { 
+    form {
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 50%;
+    }
+    .flexContainerKeuzeDier {
+        display: flex;
+        flex-direction: row;
+    }
+    
+
+ }
